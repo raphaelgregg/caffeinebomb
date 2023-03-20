@@ -4,6 +4,7 @@ import {useFonts, Inter_400Regular } from '@expo-google-fonts/inter';
 import {Lexend_600SemiBold, Lexend_700Bold } from '@expo-google-fonts/lexend';
 
 import { SignIn } from "@screens/SignIn";
+import { Home } from "@screens/Home";
 import { Loading } from "@components/Loading";
 
 import theme from './src/theme';
@@ -22,7 +23,7 @@ export default function App() {
         backgroundColor="transparent"
         translucent
       />
-      {fontsLoaded ? <SignIn /> : <Loading />}
+      {fontsLoaded ? <Home /> : <Loading />}
     </ThemeProvider>
   );
 }
